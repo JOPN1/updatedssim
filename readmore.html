@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+    /* Hero Section */
+    .hero-section {
+        background: url('./images/client.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .hero-content {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+    }
+
+    .section-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        color: red;
+    }
+
+    /* Programs List */
+    .programs {
+        margin-top: 20px;
+    }
+
+    .program {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .program:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    .program h2 {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .program-description {
+        display: none;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .program-description.active {
+        display: block;
+    }
+
+    .arrow {
+        font-size: 16px;
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+        .hero-section {
+            min-height: 60vh;
+        }
+        .hero-content {
+            font-size: 16px;
+        }
+    }
+        .section-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: red;
+        }
+        .pastor-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #mission{
+            background: rgba(0, 0, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: black;
+        }
+
+         /* Mobile Adjustments */
+         @media (max-width: 768px) {
+            .hero-section {
+                min-height: 60vh;
+            }
+            .hero-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <!-- header section start -->
+
+  <header class="header_section"
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a href="index.html" class="navbar-brand">
+       
+      </a>
+      <div class="" id="">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+          <span class="s-1"></span>
+          <span class="s-2"></span>
+          <span class="s-3"></span>
+        </button>
+        <div class="overlay" id="myNav">
+          <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="message.html">Sermons</a>
+            <a href="give.html">Give</a>
+            <a href="reachout.html">ContactUs</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- End of header section -->
+
+
+    <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+      <h1>Major conferences, <span class="highlight">of the year</span></h1>
+      
+      <!-- Major Programs List -->
+      <div class="programs">
+          <div class="program" onclick="toggleDescription('tsc')">
+              <h2>The Spirit Conference (TSC) <span class="arrow">&#x25BC;</span></h2>
+              <p id="tsc" class="program-description">A gathering of believers to experience the move of the Spirit through teachings, impartations, and deep fellowship.</p>
+          </div>
+          <div class="program" onclick="toggleDescription('ilc')">
+              <h2>International Life Conference (ILC) <span class="arrow">&#x25BC;</span></h2>
+              <p id="ilc" class="program-description">A transformational conference that builds and equips believers to live out the life of Christ in all aspects.</p>
+          </div>
+          <div class="program" onclick="toggleDescription('word-conference')">
+              <h2>Word Conference <span class="arrow">&#x25BC;</span></h2>
+              <p id="word-conference" class="program-description">An intensive study and exposition of God's word, focusing on spiritual growth and doctrine.</p>
+          </div>
+          <div class="program" onclick="toggleDescription('slam')">
+            <h2>SLAM <span class="arrow">&#x25BC;</span></h2>
+            <p id="slam" class="program-description">
+                School of Leadership and Mentorship—a school where leaders are raised. This training process takes a month, after which a certificate will be awarded to participants.  
+                <br><br>
+                <a href="https://yourregistrationlink.com" class="register-btn" target="_blank">Register Now</a>
+            </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="container py-5">
+  <h2 class="section-title text-center">Our <span class="highlight">Mandate</span></h2>
+  <p class="text-center">
+     To raise a People with the Gospel who know the Spirit and are led by the Spirit.
+  </p>
+</section>
+
+
+<!-- close -->
+
+<!-- About Section -->
+<section id="mission" class="container py-5">
+        <h2 class="section-title text-center" style="color: aliceblue;">our mission</h2>
+        <p class="text-center">
+             To raise a People with the Gospel who know the Spirit and are led by the Spirit
+        </p>
+        
+    </section>
+
+
+    <!-- About Section -->
+    <section class="container py-5">
+        <h2 class="section-title text-center" style="border-radius: 20px;">our vision</h2>
+        <p class="text-center">
+            Our Vision is to raise a supernatural people who are equipped with the message of the Gospel and know how to walk with the Spirit for kingdom advancement and influence sectors for the Father.
+        </p>
+       
+    </section>
+    <!-- We Believe Section -->
+    <section class="container py-5 bg-light">
+        <h2 class="section-title text-center">WE BELIEVE</h2>
+        <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">The gifts of the Spirit are at work in the life of the believer.</li>
+            <li class="list-group-item">That the Word of God is the ultimate standard for doctrine.</li>
+            <li class="list-group-item">That the Father's biggest display of affection is in the redemptive work of Christ.</li>
+            <li class="list-group-item">That we are blessed because righteousness is credited to us through the grace of our Lord Jesus Christ.</li>
+        </ul>
+    </section>
+
+    <!-- Lead Pastor Section -->
+    <section class="container py-5" style="background-color: black; color: aliceblue; border-radius: 20px 0 0 20px ;">
+        <h2 class="section-title text-center">OUR LEAD PASTOR</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="./images/client.jpg" alt="Lead Pastor" class="pastor-img">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Pastor Nehemiah Esele Aluya  is the founder and lead pastor of Streams of the Spirit International Ministry (SSIM),  a ministry focused on  raising supernatural people who are equipped with the knowledge of the gospel and knows how to walk with the spirit for kingdom advancement and influencing sectors for the father .  
+
+A seasoned leadership and mentorship coach, Pastor Nehemiah is certified by the Miracle Invasion Leadership Institute and the  Family Worship School of Mentorship and Leadership. His passion for empowering leaders inspired the creation of the School of Leadership and Mentorship (SLAM), a flagship initiative of SSIM. SLAM offers an intensive Leadership and Mentoring training to equip leaders, pastors, C-Suite Executives, career professionals, and entrepreneurs with practical strategies and spiritual insights to thrive in their fields 
+
+He holds. Bachelor’s degree in Health Education from Ambrose Alli University, Ekpoma, Edo State, Nigeria. 
+
+He is happily married to Pastor Esther Nehemiah Aluya who serves alongside him in ministry. Together, they are devoted to transforming lives, nurturing leaders, and advancing the Kingdom of God both locally and globally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+      <!-- start of footer -->
+  <footer class="footer_section" style="border-radius: 20px 0 0 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_content">
+            <h4>Reach us at...</h4>
+            <div class="contact_link_box">
+              <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span></a>
+              <a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +234 922342344</span></a>
+              <a href=""><i class="fa fa-envelop" aria-hidden="true"></i>
+              <span>ssim@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              <img src="./images/SSIM WHITE.png" height="50px" width="50px" alt="">
+            </a>
+            <p>follow our socials to stay connected from far and near </p>
+            <div class="footer_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span>All Rights Reserved By
+        <a href="#">SSIM</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+
+<script>
+  function myMap() {
+    var location = { lat: 6.7315, lng: 6.1342 }; // Coordinates for Thywill Event Centre, Ekpoma
+
+    var mapOptions = {
+      zoom: 16, // Adjust zoom level for better view
+      center: location,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+    };
+    
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    
+    // Marker for the location
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: "Thywill Event Centre, Abia Junction, Ujemen, Ekpoma",
+    });
+    
+    // Info window with details (black text for Thywill Event Centre)
+    var infoWindow = new google.maps.InfoWindow({
+      content:
+      '<h4 style="color: black; font-weight: bold;">Thywill Event Centre</h4>' +
+      '<p style="color: black;">Located at Abia Junction, Ujemen, Ekpoma.</p>' +
+      '<p><a href="https://www.google.com/maps/dir/?api=1&destination=6.7315,6.1342" target="_blank">Get Directions</a></p>',
+    });
+    
+    // Open info window when marker is clicked
+    marker.addListener("click", function () {
+      infoWindow.open(map, marker);
+    });
+
+    // Automatically show the info window on load
+    infoWindow.open(map, marker);
+  }
+  
+  // Ensure the map loads when the page is fully loaded
+  window.onload = function () {
+    if (typeof google !== "undefined") {
+      myMap();
+    }
+  };
+</script>
+
+<!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+
+  <!-- End Google Map -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+      <!-- JavaScript for FAQ Functionality -->
+      <script>
+        function toggleDescription(id) {
+            var description = document.getElementById(id);
+            description.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

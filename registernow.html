@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slam registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+
+    
+        body, html {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./images/slider-bg.jpg);
+        }
+
+        .contact_section {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+           background-image: url(./images/slider-bg.jpg);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .heading_container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact_form-container input,
+        .contact_form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn_box {
+            text-align: center;
+        }
+
+        .btn_box button {
+            background: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn_box button:hover {
+            background: #cc0000;
+        }
+
+        .info-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .whatsapp-link {
+            color: green;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    
+  </style>
+
+</head>
+<body>
+
+     
+  <!-- header section start -->
+
+  <header class="header_section"
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a href="index.html" class="navbar-brand">
+        <span> <img src="images/SSIM WHITE.png", height="50" ,width="70"></span>
+        <span style="font-size:10px;"></span>
+      </a>
+      <div class="" id="">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+          <span class="s-1"></span>
+          <span class="s-2"></span>
+          <span class="s-3"></span>
+        </button>
+        <div class="overlay" id="myNav">
+          <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="message.html">Sermons</a>
+            <a href="give.html">Give</a>
+            <a href="reachout.html">ContactUs</a>
+            <a href="calender.html">Calendar</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- End of header section -->
+
+
+<section class="contact_section layout_padding">
+    <div class="contact_bg_box">
+        <img src="images/contact-bg.jpg" alt="Background">
+    </div>
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>Register for SLAM</h2>
+        </div> 
+        <div class="">
+            <div class="row">
+                <div class="col-lg-7 col-md-9 col-12 mx-auto">
+                    <form action="https://formsubmit.co/preciouschris207@gmail.com" method="POST">
+                        <div class="contact_form-container">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mb-3">
+                                    <input type="text" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6 col-12 mb-3">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-12 mb-3">
+                                    <select name="attendance_mode" required>
+                                        <option value="" disabled selected>Choose Attendance Mode</option>
+                                        <option value="online">Online</option>
+                                        <option value="onsite">Onsite</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Hidden Fields for FormSubmit -->
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div class="btn_box">
+                                <button type="submit">Register</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="info-text">
+                        Note: Payment details will be provided upon registration.  
+                        For more inquiries, contact us on  
+                        <a href="https://wa.me/2348133247893" class="whatsapp-link">WhatsApp</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
